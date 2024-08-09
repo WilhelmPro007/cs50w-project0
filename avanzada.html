@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Avanzada</title>
+    <link rel="stylesheet" href="styleavanzada.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="google_logo.PNG" alt="Google"></a>
+        </div>
+        <h1>Búsqueda avanzada</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset class="search-terms">
+                <legend>Mostrar páginas que contengan...</legend>
+                <div class="input-group">
+                    <label for="allWords">todas estas palabras:</label>
+                    <input type="text" id="allWords" name="allWords">
+                </div>
+                <div class="input-group">
+                    <label for="exactPhrase">esta palabra o frase exacta:</label>
+                    <input type="text" id="exactPhrase" name="exactPhrase">
+                </div>
+                <div class="input-group">
+                    <label for="anyWords">cualquiera de estas palabras:</label>
+                    <input type="text" id="anyWords" name="anyWords">
+                </div>
+                <div class="input-group">
+                    <label for="noneWords">ninguna de estas palabras:</label>
+                    <input type="text" id="noneWords" name="noneWords">
+                </div>
+                <div class="input-group range">
+                    <label for="numbersRange">números del:</label>
+                    <input type="text" id="numbersRange" name="numbersRange" placeholder="">
+                    <span>al</span>
+                    <input type="text" id="numbersRangeTo" name="numbersRangeTo" placeholder="">
+                </div>
+            </fieldset>
+            <fieldset class="restrictions">
+                <legend>Luego restringe tus resultados por...</legend>
+                <div class="input-group">
+                    <label for="language">idioma:</label>
+                    <select id="language" name="language">
+                        <option value="all">cualquier idioma</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="region">región:</label>
+                    <select id="region" name="region">
+                        <option value="all">cualquier región</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="lastUpdate">última actualización:</label>
+                    <select id="lastUpdate" name="lastUpdate">
+                        <option value="anytime">en cualquier momento</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="siteDomain">sitio o dominio:</label>
+                    <input type="text" id="siteDomain" name="siteDomain">
+                </div>
+                <div class="input-group">
+                    <label for="termsAppears">términos que aparecen:</label>
+                    <select id="termsAppears" name="termsAppears">
+                        <option value="anywhere">En cualquier parte de la página</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="fileType">tipo de archivo:</label>
+                    <select id="fileType" name="fileType">
+                        <option value="any">Cualquier formato</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="usageRights">derechos de uso:</label>
+                    <select id="usageRights" name="usageRights">
+                        <option value="all">Páginas cuyo uso no requiera de licencias</option>
+                        <!-- otras opciones -->
+                    </select>
+                </div>
+            </fieldset>
+            <div class="submit-button">
+                <button type="submit">Búsqueda avanzada</button>
+            </div>
+            <div class="additional-links">
+                <a href="#">Buscar páginas similares a una URL</a>
+                <a href="#">Buscar las páginas visitadas</a>
+                <a href="#">Usar los operadores del cuadro de búsqueda</a>
+                <a href="#">Personalizar la configuración de búsqueda</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="country">Nicaragua</div>
+        <div class="footer-links">
+            <a href="#">Ayuda</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Condiciones</a>
+        </div>
+    </footer>
+</body>
+</html>

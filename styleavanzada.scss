@@ -1,0 +1,148 @@
+// Variables de colores
+$primary-color: #4285f4;
+$background-color: #f8f9fa;
+$text-color: #202124;
+$border-color: #dadce0;
+$footer-background: #f1f1f1;
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+    .logo img {
+        height: 30px;
+        margin-right: 10px;
+    }
+    h1 {
+        display: inline-block;
+        font-size: 1.5em;
+        color: #ea4335;
+        vertical-align: middle;
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    form {
+        fieldset {
+            border: none;
+            border-bottom: 1px solid $border-color;
+            margin-bottom: 20px;
+            padding: 0;
+            legend {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .input-group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                label {
+                    width: 240px;
+                    padding-right: 10px;
+                }
+                input, select {
+                    flex: 1;
+                    padding: 5px;
+                    border: 1px solid $border-color;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                .range {
+                    display: flex;
+                    align-items: center;
+                    input[type="text"] {
+                        width: 120px;
+                        margin-right: 10px;
+                    }
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    .submit-button {
+        text-align: center;
+        button {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+    .additional-links{
+        margin: 10px 0;
+    }
+    .additional-links a{
+        margin-bottom: 30px;
+        padding: 10px;
+        color: $primary-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    padding: 20px;
+    background-color: $footer-background;
+    text-align: center;
+    border-top: 1px solid $border-color;
+    .footer-links {
+        margin: 10px 0;
+    }
+    .footer-links a {
+        margin: 0 10px;
+        color: $primary-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .country {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        form {
+            .input-group {
+                flex-direction: column;
+                align-items: flex-start;
+                label, input, select {
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    footer {
+        .additional-links a, .footer-links a {
+            display: block;
+            margin: 5px 0;
+        }
+    }
+}
